@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Passgen</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="app-name">
+            <h1>Password Generator</h1>
+        </div>
+
+        <div class="password-box">
+            <input type="text" class="pass-value" value="pass$7" readonly>
+            <i class="fa fa-clone" style="color: rgb(104, 10, 10);" id="copy-btn"></i>
+        </div>
+    
+        <div class="indicator-box">
+            <div></div>
+            <div class="indicator"></div>
+        </div>
+    
+        <h2 class="pass-settings-title">Password Settings</h2>
+        <div class="password-length-box">
+            <span>Password Length</span>
+            <span class="pass-length-value">6</span>
+            <input type="range" class="pass-slider" min="6" max="36" value="6">
+        </div>
+    
+        <div class="settings">
+            <div class="lowercase">
+                <label>
+                    <input type="checkbox" id="lowercase" checked disabled>
+                    <span>Lowercase (a-z)</span>
+                </label>
+            </div>
+            <div class="uppercase">
+                <label>
+                    <input type="checkbox" id="uppercase" checked>
+                    <span>Uppercase (A-Z)</span>
+                </label>
+            </div>
+            <div class="numbers">
+                <label>
+                    <input type="checkbox" id="numbers" checked>
+                    <span>Numbers (0-9)</span>
+                </label>
+            </div>
+            <div class="symbols">
+                <label>
+                    <input type="checkbox" id="symbols" checked>
+                    <span>Symbols (!#&*%-@)</span>
+                </label>
+            </div>
+            
+            <button class="generate-btn" style="vertical-align:middle"><span>Generate Password</span></button>
+            <!-- <button class="generate-btn">Generate Password</button> -->
+        </div>
+    </div>
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
